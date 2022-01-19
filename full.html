@@ -2,6 +2,7 @@
   
   <head>
     <title>🦊萌狸科技 | MoeFox.Tech</title>
+    <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
     <style>* { font-family: Arial, Helvetica, sans-serif; } body { margin: 0px; } .container { width: 600px; max-width: 100%; margin: 0px auto; text-align: center; } .textblock { width: 600px; max-width: 100%; margin: 20px auto; box-sizing: border-box; } .danger { background-color: rgb(255, 50, 50); padding: 10px; border: 1px solid rgb(153, 0, 0); border-radius: 5px; color: rgb(255, 255, 255); font-weight: 700; } .justify { text-align: justify; } h3 { text-align: left; margin-bottom: -18px; } .greybutton { padding: 10px; border-radius: 5px; background-color: rgb(89, 89, 89); font-size: 15px; border: 1px solid rgb(89, 89, 89); color: rgb(255, 255, 255); transition: background-color 0.3s ease 0s, color 0.3s ease 0s; text-decoration: none; display: block; margin-top: 10px; font-weight: 700; margin-bottom: 10px; text-align: center; } .button { padding: 10px; border-radius: 5px; background-color: rgb(255, 255, 255); font-size: 15px; border: 1px solid rgb(10, 81, 164); color: rgb(10, 81, 164); transition: background-color 0.3s ease 0s, color 0.3s ease 0s; text-decoration: none; display: block; margin-top: 10px; font-weight: 700; margin-bottom: 10px; text-align: center; } .button:hover { background-color: rgb(10, 81, 164); color: rgb(255, 255, 255); cursor: pointer; } .footer { position: fixed; bottom: 0px; text-align: left; } .ad { height: 600px; width: 300px; position: fixed; top: 10px; } .ad.left { left: 10px; } .ad.right { right: 10px; } @media screen and (max-width: 1024px) { .ad { display: none !important; } }</style>
   </head>
   
@@ -32,6 +33,13 @@
           <h3>作为成员，您可以要求在上方添加您的站点链接（无论是博客、个人主页或是工具站），同时也可以申请形如
             <a href="https://ayx.moefox.tech/">https://ayx.moefox.tech</a>的二级域名。请发邮件给我。
             <h3></div>
+        <div id="waline"></div>
+        <script>
+          Waline({
+            el: '#waline',
+            serverURL: 'https://your-domain.vercel.app',
+          });
+        </script>
         <div class="footer">Owned by 54df group. Hosted by
           <a href="https://ayx.moefox.tech/">Aynxul03</a>.</div>
   </body>
