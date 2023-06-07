@@ -134,12 +134,16 @@ h3 {
      <div id="waline"> 
      </div> 
     </div> 
-    <script>Waline({
+    <script type="module">	
+        import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+
+        init({
           el: '#waline',
           serverURL: 'https://c.imayx.top/',
-        });</script> 
+        });		
+    </script>
     <div class="footer">
-     MoeFox Technology 2021-2022: Owned by 54df Group. Hosted by 
+     MoeFox Technology 2021-2023: Owned by 54df Group. Hosted by 
      <a href="https://imayx.top/">ImAyx</a>.
     </div>   
    </center>
